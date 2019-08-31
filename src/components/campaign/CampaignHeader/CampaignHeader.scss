@@ -1,0 +1,29 @@
+.CampaignHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  margin-top: 0;
+  &__left {
+    display: flex;
+    flex-direction: column;
+    &--title {
+      margin: 0;
+      font-size: 34px;
+      margin-bottom: 6px;
+    }
+    &--count {
+      font-size: 18px;
+      color: rgb(213, 213, 213);
+    }
+  }
+  &__right {
+    display: flex;
+    justify-content: center;
+    button {
+      outline: 0;
+      border: 0;
+      background-color: initial;
+      padding: 0;
+    }
+  }
+}

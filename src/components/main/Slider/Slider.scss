@@ -1,0 +1,27 @@
+.Slider {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    padding-left: 26px;
+    font-size: 18px;
+    color: rgb(213, 213, 213);
+    margin-bottom: 10px;
+  }
+  &__content {
+    width: auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 0;
+      height: 0;
+    }
+    display: flex;
+    .CampaignBoxWrapper + .CampaignBoxWrapper {
+      margin-left: 14px;
+    }
+    .CampaignBox {
+      width: 320px;
+    }
+  }
+}

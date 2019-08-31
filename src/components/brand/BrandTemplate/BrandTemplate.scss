@@ -1,0 +1,17 @@
+.BrandTemplate {
+  margin-top: 6px;
+  padding: 0 21px;
+  padding-bottom: 26px;
+  &__title {
+    display: block;
+    font-size: 18px;
+    color: rgb(213, 213, 213);
+    padding: 0 5px;
+    margin-bottom: 10px;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+}

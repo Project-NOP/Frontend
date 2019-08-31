@@ -1,3 +1,4 @@
 {
-  "SERVER":"set your server address here"
+  "SERVER": "set your server address here",
+  "DEPLOY": "http://172.20.199.240:3000"
 }

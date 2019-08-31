@@ -1,5 +1,6 @@
-import React from 'react';
+import React from "react";
+import MainTemplate from "components/main/MainTemplate";
 
-const HomePage = () => <div>Hi HomePage</div>;
+const HomePage = () => <MainTemplate />;
 
 export default HomePage;
