@@ -31,30 +31,34 @@ const CampaignDetailTemplate = props => {
         </div>
         <div className="CampaignDetailTemplate__content__section">
           <h1>설명</h1>
-          {hideDesc ? (
-            <span>
-              {props.desc.substring(0, 149)}
-              <button
-                className="descCtrlBtn"
-                onClick={() => {
-                  setHideDesc(!hideDesc);
-                }}
-              >
-                ... 더보기
-              </button>
-            </span>
+          {props.desc.length >= 150 ? (
+            hideDesc ? (
+              <span>
+                {props.desc.substring(0, 149)}
+                <button
+                  className="descCtrlBtn"
+                  onClick={() => {
+                    setHideDesc(!hideDesc);
+                  }}
+                >
+                  ... 더보기
+                </button>
+              </span>
+            ) : (
+              <span>
+                {props.desc}
+                <button
+                  className="descCtrlBtn"
+                  onClick={() => {
+                    setHideDesc(!hideDesc);
+                  }}
+                >
+                  ... 줄이기
+                </button>
+              </span>
+            )
           ) : (
-            <span>
-              {props.desc}
-              <button
-                className="descCtrlBtn"
-                onClick={() => {
-                  setHideDesc(!hideDesc);
-                }}
-              >
-                ... 줄이기
-              </button>
-            </span>
+            props.desc
           )}
         </div>
         <div className="CampaignDetailTemplate__content__section">

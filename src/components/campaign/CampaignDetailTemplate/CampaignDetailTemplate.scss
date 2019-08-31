@@ -6,6 +6,7 @@
     height: 250px;
     background-position: top center;
     background-repeat: no-repeat;
+    background-size: cover;
     padding: 20px;
     button {
       display: flex;
@@ -19,7 +20,7 @@
     }
   }
   &__content {
-    padding: 26px;
+    padding: 26px 16px;
     &__title {
       display: flex;
       flex-direction: column;

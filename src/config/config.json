@@ -1,4 +1,4 @@
 {
   "SERVER": "set your server address here",
-  "DEPLOY": "http://172.20.199.240:3000"
+  "DEPLOY": "http://planbnb-deploy-s3.s3-website.ap-northeast-2.amazonaws.com"
 }

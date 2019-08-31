@@ -6,17 +6,21 @@ import {
   CampaignPage,
   CampaignDetailPage,
   BrandPage,
-  BrandDetailPage
+  BrandDetailPage,
+  PlaceholderPage
 } from "pages";
+import ProductPage from "pages/ProductPage";
 
 const App = () => {
   return (
     <Switch>
-      <Route exact path="/today" component={BrandPage} />
+      <Route exact path="/today" component={HomePage} />
       <Route exact path="/campaign" component={CampaignPage} />
       <Route path="/campaign/:id" component={CampaignDetailPage} />
       <Route exact path="/brand" component={BrandPage} />
       <Route exact path="/brand/:id" component={BrandDetailPage} />
+      <Route exact path="/product" component={ProductPage} />
+      <Route exact path="/placeholder" component={PlaceholderPage} />
       <Route component={NotFoundPage} />
     </Switch>
   );

@@ -10,11 +10,11 @@ const CampaignBox = props => (
       className="CampaignBox"
       style={{
         backgroundImage: `url(${process.env.PUBLIC_URL}/bgShadow.png), url(${props.bg})`,
-        marginLeft: `${props.marginLeft ? 26 : 0}px`,
-        marginRight: `${props.marginRight ? 26 : 0}px`
+        marginLeft: `${props.marginLeft ? 16 : 0}px`,
+        marginRight: `${props.marginRight ? 16 : 0}px`
       }}
       onClick={() => {
-        push("web", "present", `${DEPLOY}/campaign/${props.id}`, "false");
+        push("web", "present", `${DEPLOY}/campaign/${props.id}`, false);
       }}
     >
       <div className="CampaignBox__joiner">

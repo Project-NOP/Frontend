@@ -3,4 +3,5 @@ export { default as CampaignPage } from "./CampaignPage";
 export { default as CampaignDetailPage } from "./CampaignDetailPage";
 export { default as BrandPage } from "./BrandPage";
 export { default as BrandDetailPage } from "./BrandDetailPage";
+export { default as PlaceholderPage } from "./PlaceholderPage";
 export { default as NotFoundPage } from "./NotFoundPage";

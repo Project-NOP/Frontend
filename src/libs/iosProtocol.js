@@ -6,7 +6,7 @@ exports.push = (view, present, url, showNavigation) => {
     view,
     present_type: present,
     url,
-    showNavigation,
+    show_navigation: showNavigation,
     token: document.querySelector("html").getAttribute("token")
   });
 };

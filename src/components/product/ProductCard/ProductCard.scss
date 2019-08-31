@@ -1,0 +1,26 @@
+.ProductCard {
+  padding: 0 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-top: 20px;
+  img {
+    display: block;
+    width: 100%;
+    background-color: black;
+    height: 200px;
+    border-radius: 14px;
+    border: 0;
+    object-fit: contain;
+    object-position: center center;
+  }
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-size: 20px;
+  }
+  span {
+    font-size: 16px;
+  }
+}
